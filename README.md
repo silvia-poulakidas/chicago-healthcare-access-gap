@@ -50,4 +50,4 @@ Four factors were normalized (0-1 scale) and combined into a weighted priority i
 
 ## Author
 
-Silvia Poulakidas — [LinkedIn link] — [email]
+Silvia Poulakidas — www.linkedin.com/in/silvia-poulakidas — silviapoulakidas@gmail.com
