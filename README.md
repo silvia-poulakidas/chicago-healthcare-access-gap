@@ -15,6 +15,10 @@ Chicago Lawn — account for 31% of the city's estimated uninsured adults. These
 areas show nearly double the limited-English-proficiency rate of the citywide average
 (24% vs. 14%), and 4 of the 10 sit more than 3 miles from the nearest free clinic.
 
+![Top 10 priority areas for healthcare access expansion](chart_top10_priority.png)
+
+![Uninsured rate vs. clinic access across all 77 community areas](chart_scatter_access_gap.png)
+
 ## Data Sources
 
 - **Chicago Health Atlas** — uninsured rate, chronic disease indicators, limited
