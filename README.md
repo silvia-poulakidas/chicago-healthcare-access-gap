@@ -1,14 +1,14 @@
 # Chicago Healthcare Access Gap
 
 A geospatial analysis identifying which Chicago neighborhoods have the greatest unmet
-need for free and charitable healthcare access — built to answer the kind of
+need for free and charitable healthcare access, built to answer the kind of
 resource-allocation question a healthcare safety-net organization has to make with
 limited resources.
 
 ## The Question
 
-If an organization wanted to expand free healthcare access in Chicago, which
-neighborhoods should they prioritize first?
+**If an organization wanted to expand free healthcare access in Chicago, which
+neighborhoods should they prioritize first?**
 
 This isn't just "where is the uninsured rate highest." A neighborhood can have a high
 rate but a small population, or high need but an existing clinic nearby. The goal was
@@ -18,15 +18,15 @@ for multiple dimensions of need at once.
 ## Key Findings
 
 - **31% of the city's estimated uninsured adults** live in just 10 of Chicago's 77
-  community areas — led by **South Lawndale, Belmont Cragin, and Chicago Lawn**.
+  community areas, led by **South Lawndale, Belmont Cragin, and Chicago Lawn**.
 - Those same 10 areas have **nearly double the limited-English-proficiency rate**
   of the citywide average (**24% vs. 14%**), suggesting language access and insurance
   access are correlated, not independent problems.
-- **4 of the 10 priority areas** — West Lawn, Ashburn, West Pullman, and Mount
-  Greenwood — sit more than 3 miles from the nearest clinic in the directory used here.
+- **4 of the 10 priority areas**, West Lawn, Ashburn, West Pullman, and Mount
+  Greenwood, sit more than 3 miles from the nearest clinic in the directory used here (Reference the sctterplot).
 - Cross-referencing against real free-clinic locations in Chicago, **two of the top
   three priority areas already have a free-clinic presence** (Belmont Cragin and
-  South Lawndale/Little Village), while **Chicago Lawn — the #3 priority area — does
+  South Lawndale/Little Village), while **Chicago Lawn, the #3 priority area, does
   not** appear to have one in this directory. This suggests it may be worth
   investigating as a potential expansion target.
 
@@ -44,13 +44,13 @@ priority index. The dashed line marks the 3-mile distance threshold.*
 
 | Source | What it provided | Vintage |
 |---|---|---|
-| [Chicago Health Atlas](https://chicagohealthatlas.org/) | Uninsured rate, chronic disease indicators (diabetes, hypertension, obesity), limited English proficiency, population — by community area | Uninsured rate: 2023 ACS (Table B21001); language: ACS 2020-2024 5-Year; chronic disease: Healthy Chicago Survey 2023-2024 |
+| [Chicago Health Atlas](https://chicagohealthatlas.org/) | Uninsured rate, chronic disease indicators (diabetes, hypertension, obesity), limited English proficiency, population, by community area | Uninsured rate: 2023 ACS (Table B21001); language: ACS 2020-2024 5-Year; chronic disease: Healthy Chicago Survey 2023-2024 |
 | [Illinois Association of Free & Charitable Clinics](https://www.illinoisfreeclinics.org/) | Directory of free/charitable clinics statewide, filtered to 18 Chicago-proper (606xx) locations with fixed addresses | Directory pull, July 2026 |
 
 **Note on mixed vintages:** each indicator in the Health Atlas dataset comes from
 whichever source release was most current at the time of query, so this dataset spans
-several years rather than a single snapshot. This is normal for aggregated public
-health data, but worth being explicit about — see Limitations.
+several years (2020 - 2024) rather than a single snapshot. This is normal for aggregated public
+health data, but worth being explicit about.
 
 ## Methodology
 
@@ -84,7 +84,7 @@ Volume and distance carry the most weight because the guiding question was
 "where would a new clinic reach the most people with the least existing access,"
 not "where is the population *proportionally* most affected." A small neighborhood
 with a very high uninsured rate can rank below a larger neighborhood with a more
-moderate rate — this is a deliberate tradeoff, not an oversight (see Limitations).
+moderate rate, this is a deliberate tradeoff, not an oversight (see Limitations).
 
 ## Limitations
 
@@ -94,8 +94,8 @@ moderate rate — this is a deliberate tradeoff, not an oversight (see Limitatio
 - **Clinic distances are straight-line, not drive or transit time.** Real-world
   accessibility depends on transportation, not just physical distance.
 - **The clinic directory is not necessarily exhaustive.** It reflects one point-in-time
-  pull from a single source and excludes mobile-only clinics, FQHCs, and hospital
-  charity-care programs — it specifically models the free/charitable clinic safety net.
+  pull from a single source and excludes mobile-only clinics, and hospital
+  charity-care programs, it specifically models the free/charitable clinic safety net.
 - **Volume-weighting deprioritizes small, high-rate neighborhoods.** The index favors
   total people reached over proportional severity. A neighborhood with a smaller
   population but a very high uninsured rate may rank lower than its severity would
